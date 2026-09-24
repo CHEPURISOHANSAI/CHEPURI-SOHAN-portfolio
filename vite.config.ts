@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
-// Vite configuration for standalone & production deployments (Vercel, Netlify, GitHub Pages)
+// Vite configuration for standalone & production deployments (GitHub Pages, Vercel, Netlify)
 export default defineConfig({
+  base: './',
   plugins: [
     react(),
     tailwindcss(),
